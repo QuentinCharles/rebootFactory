@@ -1,0 +1,121 @@
+/* Images d'illustration reprise du site http://wallpaper-iphone.le-blog-du-geek.com/informatique-28.htm */
+
+
+.container{
+	background: black;
+	width: 320px;
+	height: 480px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.slides{
+	-webkit-transition: all 1.0s ease ;
+}
+
+.slide{
+	width: 320px;
+	height: 480px;
+	position: absolute;
+}
+
+.slideUne{
+background: url('../img/slideUne.jpg');
+}
+
+.slideDeux{
+
+	-webkit-transform:translate(320px);
+	background: url('../img/slideDeux.jpg');
+	-webkit-transition: all 0.5s ease-in;
+
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	top: 430px;
+}
+
+ul li{
+	float: left;
+	margin-left: 21%;
+}
+
+ul li:nth-child(1){
+	margin-left: 0%;
+}
+
+
+.navList{
+	background: white;
+	height: 12px;
+	width: 12px;
+	border-radius: 6px;
+}
+
+.navListDeux{
+	opacity: 0.1;
+	-webkit-transition: all 0.6s ease;
+
+
+}
+
+.navListUne{
+	-webkit-transition: all 0.6s ease;
+
+}
+
+.fleche{
+	margin-top: -10px;
+	width: 45px;
+	height: 35px;
+	background: url('../img/fleche.svg') no-repeat;
+}
+
+.flecheGauche{
+	background-position: 20px 0px;
+	opacity: 0;
+	-webkit-transform:translate(50px);
+	-webkit-transition: all 0.4s ease-out;
+
+
+}
+
+.flecheDroite{
+	background-position: -20px 0px;
+	-webkit-transition: all 0.4s ease-out;
+
+}
+
+.transitionSlides{
+	-webkit-transform:translate(-320px);
+	
+}
+
+.transitionFlecheDroite{
+		-webkit-transform:translate(-50px);
+}
+
+.transitionFlecheGauche{
+		-webkit-transform:translate(0px);
+}
+
+.disparition{
+	opacity: 0;
+
+}
+
+
+.flou{
+	opacity: 0.1;
+
+}
+
+.apparition{
+	opacity: 1;
+}

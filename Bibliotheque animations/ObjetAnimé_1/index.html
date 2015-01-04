@@ -1,15 +1,55 @@
 <!DOCTYPE html>  
 <html lang="fr"> 
+
 	<head>
-		<title>Titre de la page</title>
-		<meta charset="UTF-8" /> 
+	<!-- Description-->
+		<title>Animation-transition pour Tutoriel (débutant app)</title>
+		<meta name="description" content="Premier essai d'une animation genre tutoriel
+		 pour une première utlisation de l'application" />
+		 <!-- .Images d'illustration reprise du site http://wallpaper-iphone.le-blog-du-geek.com/informatique-28.html
+		 	  . Idée -->
+
+		<meta charset="UTF-8" />
+	<!-- END Description-->
+
+	<!-- Liens CSS -->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- END Liens CSS -->
+
+
+	<!-- Meta-Mobile -->
+		<meta name="viewport" content="user-scalable=no,initial-scale=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-status-barstyle" content= "black-translucent">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-barstyle" content= "black-translucent">
+	<!-- END Meta-Mobile -->
 	</head>
 
 	<body> 
 
-		<p>test</p>
+	<div class="container">
+		
+		<div class="slides">
+			<section class="slide slideUne"></section>
+			<section class="slide slideDeux"></section>
+		</div>
+	
+
+		<ul class="nav">
+			<li class="navFleche">
+				<div class="fleche flecheGauche"></div>
+			</li>
+			<li class="navList navListUne"></li>
+			<li class="navList navListDeux"></li>
+			<li class="navFleche">
+				<div class="fleche flecheDroite"></div>
+			</li>
+		</ul>
+
+	</div> <!-- End CONTAINER -->
+
 
 	<!-- Javascript files -->	
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
