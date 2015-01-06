@@ -1,0 +1,236 @@
+/* Images d'illustration reprise du site http://wallpaper-iphone.le-blog-du-geek.com/informatique-28.htm */
+
+body{
+	background: black;
+}
+
+.container{
+	background: url('../img/fond.jpg ');
+	width: 320px;
+	height: 480px;
+	padding: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.bar{
+	background: rgba(191,22,22,0.85);
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	width: 320px;
+	z-index: 999999999;
+}
+
+.hamburger{
+	margin: 0;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	float: left;
+
+}
+
+.ligne{
+
+	width: 25px;
+	height: 2px;
+	background:white;
+	margin: 4px auto;
+}
+
+.ligne:nth-child(1){
+	margin-top: 17px;
+}
+
+.titre{
+	color: white;
+	float: left;
+	margin-left: 23%;
+	font-weight: bold;
+	-webkit-transition: all 0.5s ease;
+}
+
+.titreUnHover{
+-webkit-transform:translate(-96px);
+opacity: 0;
+}
+
+.titreDeux{
+	position: absolute;
+	left: 150px;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease;
+}
+
+.titreDeuxHover{
+	-webkit-transform:translate(-96px);
+	opacity: 1;
+
+}
+
+.titreDeuxHoverMun{
+	-webkit-transform:translate(-96px, -50px);
+	opacity: 0.5;
+}
+
+
+.titreTrois{
+	position: absolute;
+	top: 25px;
+	left: 56px;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease;
+}
+
+.titreTroisHoverMun{
+	top: 0px;
+	opacity: 1;
+}
+
+.capsule{
+	background: #790000;
+	width: 50px;
+	height: 25px;
+	float: left;
+	margin-left: 23%;
+	border-radius: 25px;
+	margin-top: 12px;
+}
+
+.bouton{
+	height: 25px;
+	width: 25px;
+	border-radius: 17px;
+	background: #BF1616;
+	box-shadow: 1px 1px 1px 0.4px black;
+	-webkit-transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.boutonHover{
+	background: white;
+	-webkit-transform:translate(25px);
+
+}
+
+.epingle{
+	background: url('../img/epingle.svg')  no-repeat 3px 3px;
+	width: 19px;
+	height: 19px;
+	display: block;
+	opacity: 1;
+
+}
+
+.epingleHover{
+-webkit-transform:rotate(45deg);
+opacity: 0;
+
+}
+
+
+.epingleEpingler{
+	background: url('../img/epingleEpingler.svg')  no-repeat 3px 0px;
+	width: 19px;
+	height: 19px;
+	display: block;
+	position: relative;
+	top: -19px;
+	opacity: 0;	
+	-webkit-transform:rotate(45deg);
+
+	
+}
+
+.epingleEpinglerHover{
+	opacity: 1;
+}
+
+/* End bar */
+
+.memos{
+	margin: 50px 0;
+	padding: 0;
+}
+
+.image{
+		cursor: pointer;
+}
+
+.memosList{
+	width: 320px;
+	height: 125px;
+	-webkit-transform:translateY(430px);
+}
+
+.memosListUn{
+	-webkit-transition: all 0.4s ease ;
+}
+.memosListDeux{
+	-webkit-transition: all 0.7s ease ;
+}
+.memosListTrois{
+	-webkit-transition: all 1s ease ;
+}
+.memosListQuatre{
+	-webkit-transition: all 1.3s ease;
+}
+
+.memosListQuatreHover{
+	-webkit-transform:translateY(0px);
+}
+
+.memosListTroisHover{
+	-webkit-transform:translateY(0px);
+
+}
+
+.memosListDeuxHover{
+	-webkit-transform:translateY(0px);
+
+}
+
+.memosListUnHover{
+	-webkit-transform:translateY(0px);
+}
+
+
+.para{
+color: black;
+background: white;
+margin: 0;
+padding: 0;
+z-index: 999999;
+-webkit-transition: all 0.7s ease ;
+height: 291px;
+}
+
+.paraUn{
+	-webkit-transition: height 0.7s ease ;
+}
+
+
+.memosListDeuxHoverMun, .memosListTroisHoverMun, .memosListQuatreHoverMun {
+-webkit-transform:translateY(305px);
+}
+
+.memosListUnHoverMdeux, .memosListDeuxHoverMdeux{
+	-webkit-transform:translateY(-124px);
+}
+
+.memosListTroisHoverMdeux, .memosListQuatreHoverMdeux{
+	-webkit-transform:translateY(179px);
+}
+
+.memosListUnHoverMtrois, .memosListDeuxHoverMtrois, .memosListTroisHoverMtrois{
+	-webkit-transform:translateY(-250px);	
+}
+
+.memosListQuatreHoverMtrois{
+	-webkit-transform:translateY(55px);	
+}
+
