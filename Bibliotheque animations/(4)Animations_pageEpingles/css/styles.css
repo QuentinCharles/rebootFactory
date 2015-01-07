@@ -5,13 +5,14 @@ body{
 }
 
 .container{
-	background: url('../img/fond.jpg ');
+	background: url('../img/fond.jpg ') ;
 	width: 320px;
 	height: 480px;
 	padding: 0;
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
+
 
 }
 
@@ -234,3 +235,107 @@ height: 291px;
 	-webkit-transform:translateY(55px);	
 }
 
+
+
+/* Page HighOut*/
+
+
+.sectionHigh{
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.6s ease-out;
+}
+
+.sectionHighHover{
+	background: rgba(232,231,231,0.7);
+}
+
+.sectionHighHoverBouton{
+	-webkit-transform:scale(0);	
+		-webkit-transition: all 0.001s ease-out;
+
+}
+
+
+.epingleSoiree{
+-webkit-transform-origin:50% 0;	
+-webkit-transform: rotateX(-319deg) ;
+z-index: 9999;
+-webkit-transition: all 1s ease-out;
+
+
+}
+
+.epingleSoireeHover{
+-webkit-transform:  rotateX(0deg)   ;
+
+}
+
+
+.carre{
+	background: red;
+	width: 253px;
+	height: 235px;
+	-webkit-transition: all 0.7s ease;
+	-webkit-transform-origin:50% 100%;
+	cursor: pointer;
+}
+
+.carreHover{
+	-webkit-transform:rotateX(180deg) scale(1.25);
+	box-shadow: 0 0 0 0 black;
+}
+
+.scale{
+	-webkit-transform:scale(1.25);
+}
+
+.scene3D{
+	position: relative;
+	left: 33px;
+	top: 128px;
+	-webkit-transition: all 0.7s ease;
+
+}
+
+.scene3DHover{
+-webkit-transform:translateY(-47px);
+}
+.carreUn{
+
+background: url('../img/epingleSoiree.jpg');
+position: relative;
+z-index: 9999;
+backface-visibility: hidden;
+}
+
+
+
+.carreDeux{
+	background: white;
+	position: absolute;
+	top: 0px;
+	color: black;
+	margin-top: 67px;
+	height: 186px;
+}
+
+.carreTrois{
+width: 253px;
+height: 235px;
+background: url('../img/epingleSoiree.jpg');
+position: absolute;
+top: 1px;
+-webkit-transition: all 0.7s ease;
+
+
+}
+
+
+
+.rotation{
+	-webkit-transform:rotate(180deg) rotateY(180deg);
+}

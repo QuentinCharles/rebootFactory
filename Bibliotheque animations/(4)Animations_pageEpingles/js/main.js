@@ -10,6 +10,7 @@ $(document).ready(function(){
 		$('.memosListTrois').toggleClass('memosListTroisHover');
 		$('.memosListDeux').toggleClass('memosListDeuxHover');
 		$('.memosListUn').toggleClass('memosListUnHover');
+		$('.sectionHigh').toggleClass('sectionHighHoverBouton');
 	});
 
 	$('.memosListUn').click(function(){
@@ -39,6 +40,18 @@ $(document).ready(function(){
 		$('.titreDeuxHover').toggleClass('titreDeuxHoverMun');
 		$('.titreTrois').toggleClass('titreTroisHoverMun');
 
+	});
+
+	$('.boutonHighUn').click(function(){		
+		$('.epingleSoiree').toggleClass('epingleSoireeHover');
+	});
+
+	$('.carre').click(function(){
+		$('.carre').toggleClass('carreHover');
+		$('.carreUn').toggleClass('carreUnHover');
+		$('.carreTrois').toggleClass('scale');
+		$('.scene3D').toggleClass('scene3DHover');
+		$('.sectionHigh').toggleClass('sectionHighHover');
 	});
 
 });
