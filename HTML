@@ -1,0 +1,677 @@
+/*HTML*/
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="_styles/style.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300' rel='stylesheet' type='text/css'>
+        <title>hiOut app official page</title>
+    </head>
+    
+    <body>    
+  	<div class="overlay hidden"></div>
+  		<div class="loader">
+  			<div class="loader-overlay hidden"></div>
+	  		<div id="loader-logo">
+				<svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180px" height="100px" viewBox="0 0 60 60" >    
+                <path fill="#E6E7E8" class="loader-logoBackground" d="M30.842,59.56c4.354-3.691,24.403-21.419,24.157-34.449C54.733,11.245,43.807,0.001,30.003,0.001
+                c-13.805,0-24.997,11.242-24.997,25.109H5.005C4.586,38.994,24.65,55.96,29.115,59.56c0,0,0.609,0.441,0.874,0.439
+                C30.249,59.999,30.842,59.56,30.842,59.56z"/>    
+                 <g class="loader-logoDonut">
+                        <path fill="#F6653C" d="M34,29.013l9.547,9.591c3.438-3.454,5.563-8.224,5.563-13.494H35.873
+                            C35.809,26.305,35.001,27.712,34,29.013z"/>
+                        <path fill="#F6653C" d="M26.229,29.013l-9.548,9.591c3.438,3.454,8.188,5.59,13.433,5.59V33.081
+                            C30.114,33.081,27.913,31.203,26.229,29.013z"/>
+                        <path fill="#FFFFFF" d="M24.355,25.11H11.118c0,5.27,2.126,10.04,5.562,13.494l9.548-9.591
+                            C25.228,27.712,24.42,26.305,24.355,25.11z"/>
+                        <path fill="#FFFFFF" d="M30.114,33.081v11.114c5.246,0,9.995-2.137,13.433-5.59L34,29.013
+                            C32.314,31.203,30.114,33.081,30.114,33.081z"/>
+                        <path fill="#F6653C" d="M24.34,24.959c0-1.564,0.622-2.976,1.623-4.02l-9.282-9.323c-3.437,3.454-5.562,8.225-5.562,13.494h13.237
+                            C24.353,25.061,24.34,25.008,24.34,24.959z"/>
+                        <path fill="#F6653C" d="M34.266,20.94l9.281-9.323c-3.438-3.454-8.188-5.589-13.433-5.589v13.13
+                            C31.746,19.158,33.216,19.845,34.266,20.94z"/>
+                        <path fill="#FFFFFF" d="M34.266,20.94c1,1.044,1.623,2.456,1.623,4.02c0,0.049-0.014,0.101-0.016,0.151H49.11
+                            c0-5.269-2.126-10.04-5.563-13.494L34.266,20.94z"/>
+                        <path fill="#FFFFFF" d="M30.114,19.158V6.027c-5.246,0-9.995,2.136-13.434,5.589l9.282,9.323
+                            C27.013,19.845,28.481,19.158,30.114,19.158z"/>
+                    </g>
+                </svg>
+		</div>
+
+		<div id="loader-pitch">
+        	<h1>Welcome to hiOut app official website</h1>
+        </div>
+     </div>
+    
+   	 <div class="accueil">
+    	<div class="container">
+        
+        	<div class="head">
+            	<nav class="menu">              
+                   <ul class="menu">
+                    	<li><a href="index.html">Accueil</a></li>
+                        <li><a class="scrollTo" href="#application">L'application</a></li>
+                        <li><a class="scrollTo" href="#apropos">A propos</a></li>
+                        <li><a class="scrollTo" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="titre">
+                	<div class="titre1"><h1>HIGH OUT</h1></div>
+                    <div class="soustitre">FIND YOUR PARTY QUICKLY</div>
+                </div>
+            </div>
+            
+            <section class="body">
+            	<div id="application">
+                	<div class="simplepic">
+                    	<img id="iphone" src="_images/iphone.png">
+                    </div>
+                    <div class="simpletexte">
+                    	<h2>A simple and easy party’s tool</h2>
+                       <p> HiOut is the easiest way to find a party in few seconds without losing time. Because “time is money”.</p>
+                    </div>
+                </div>
+                <div class="design">
+                	<div class="designtexte">
+                        <h2>Simplicity of design</h2>
+                        <p>With carefully thought-out design, hiOut makes it easy for you to keep control.</p>
+                    </div>
+                    <div class="designpic">
+                
+                    </div>
+                    </div>
+            </section>
+            
+        </div>
+     </div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      	<script src="_javascript/js.js"></script>
+    </body>
+</html>
+
+
+/*CSS*/
+
+@charset "utf-8";
+/* CSS Document */
+
+body{
+  margin: 0 auto;
+  overflow: hidden;
+  background-image:url(../_images/liege%20garden%20party%20156.JPG);
+  background-repeat:no-repeat;
+}
+
+.overlay {
+    position: absolute;    
+	left: 0;
+    width: 100%;
+	height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3000;
+    -webkit-transition: all .5s ease-in-out;
+    pointer-events: auto;
+    margin-top: -4rem;
+    padding-bottom: 4rem;
+}
+
+.overlay.hidden {
+	height:100%;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+/* LOADER */
+
+.loader{	
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 500;
+    color: white;
+	top: 20%;
+}
+
+#loader-logo{
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  animation: 2.5s 0.5s spinabit ease-in-out;
+  -webkit-animation: 2.5s 0.5s spinabit ease-in-out;
+  -webkit-animation-iteration-count: 2; 
+  animation-iteration-count: 2;
+}
+
+#loader-pitch{
+  font-family:"Poiret One";
+  width: 98%;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  font-size:150%;
+}
+
+@keyframes spinabit{
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);;
+  }
+  12% {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);;
+  }
+  25% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+  }
+}
+
+@-webkit-keyframes spinabit{
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);;
+  }
+  12% {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);;
+  }
+  25% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+  }
+}
+
+
+@keyframes appear{
+  0% {
+    opacity: 0;
+    margin-top: -15px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@-webkit-keyframes appear{
+  0% {
+    opacity: 0;
+    margin-top: -15px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+#svg{
+  width: 100%;
+  padding-top: 50px;
+}
+
+
+.loader-logoBackground{
+  animation: 2.5s 0.5s spin ease-in-out;
+  -webkit-animation: 2.5s 0.5s spin ease-in-out;
+  -webkit-animation-iteration-count: 2; 
+  animation-iteration-count: 2;
+
+}
+
+@keyframes spin{
+     0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  50%{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+}
+
+@-webkit-keyframes spin{
+     0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  50%{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+}
+
+
+.loader-logoDonut{
+    animation: 2.5s 0.5s spin-inverse ease-in-out forwards;
+    -webkit-animation: 2.5s 0.5s spin-inverse ease-in-out forwards;
+    -webkit-animation-iteration-count: 2; 
+    animation-iteration-count: 2;
+}
+
+@keyframes spin-inverse{
+   0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  25% {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  50%{
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  75% {
+    transform: rotate(-270deg);
+    -webkit-transform: rotate(-270deg);
+    -ms-transform: rotate(-270deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+}
+
+@-webkit-keyframes spin-inverse{
+   0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  25% {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  50%{
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  75% {
+    transform: rotate(-270deg);
+    -webkit-transform: rotate(-270deg);
+    -ms-transform: rotate(-270deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform-origin: 30px 25px;
+    -webkit-transform-origin: 30px 25px;
+    transform-origin: 30px 25px;
+  }
+}
+
+.quit-loader{
+  animation: 0.7s quit-loader forwards;
+  -webkit-animation: 0.7s quit-loader forwards;
+}
+
+@keyframes quit-loader {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    opacity: 1;
+  }
+  35% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    opacity: 0.35;
+  }
+  100% {
+    transform: translate(0px,-100px);
+    -webkit-transform: translate(0px,-100px);
+    -ms-transform: translate(0px,-100px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes quit-loader {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    opacity: 1;
+  }
+  35% {
+    transform: scale(0.5) translate(0px,0px);
+    -webkit-transform: scale(0.5) translate(0px,0px);
+    -ms-transform: scale(0.5) translate(0px,0px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.5) translate(0px,-150%);
+    -webkit-transform: scale(0.5) translate(0px,-150%);
+    -ms-transform: scale(0.5) translate(0px,-150%);
+    opacity: 0;
+  }
+}
+
+/* ACCUEIL */
+.accueil{
+    width: 100%;
+    min-height: 100%;
+    background-color: #FFF;
+    position: absolute;
+    opacity: 0;
+}
+.start-accueil{
+   animation: 0.4s 0.3s start-accueil ease-out forwards;
+   -webkit-animation: 0.4s 0.3s start-accueil ease-out forwards;
+   z-index: 1000;
+   -webkit-transform: translateZ(0);
+}
+
+@keyframes start-accueil {
+   0% {
+    transform: translate(0px,100%);
+    -webkit-transform: translate(0px,100%);
+    -ms-transform: translate(0px,100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px,0%);
+    -webkit-transform: translate(0px,0%);
+    -ms-transform: translate(0px,0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes start-accueil {
+   0% {
+    transform: translate(0px,100%);
+    -webkit-transform: translate(0px,100%);
+    -ms-transform: translate(0px,100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px,0%);
+    -webkit-transform: translate(0px,0%);
+    -ms-transform: translate(0px,0%);
+    opacity: 1;
+  }
+}
+
+.container {
+	width:100%;
+	height:100%;
+	position:relative;
+}
+
+.head {
+	width:100%;
+	height:80%;
+	background-color:#3cf6ae;
+	position:relative;
+	padding-bottom:20%;
+}
+
+
+nav {
+	width:100%;
+	margin:0 auto;
+}
+
+
+ul {
+	width:43%;
+	margin: 0 auto;
+	padding-top:8%
+}
+
+li{
+	margin:0 auto;
+	display: inline-block;
+	border-bottom:1px solid #FFF;
+}
+
+a {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size:130%;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	padding: 5px 5px 5px;
+	text-align:center;
+	margin:0 auto;
+}
+
+.titre {
+	width:100%;
+	margin: 0 auto;
+}
+
+.titre1 {
+	margin:0 auto;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size:400%;
+	color:#FFF;
+	text-align:center;
+}
+
+.soustitre {
+	margin:0 auto;	
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size:200%;
+	letter-spacing: 10px;
+	margin-top:-5%;
+	text-align:center;
+	color:#FFF;
+}
+
+.body {
+	margin:0 auto;
+	width:100%;
+	height:80%;
+	position:absolute;
+}
+
+#application {
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	background-color:#FFF;
+	position:relative;
+}
+.simplepic {
+	margin:0 auto;
+	width:40%;
+	height:100%;
+	position:relative;
+	float:left;
+	bottom:40%;
+	left:50px;
+}
+
+.simpletexte {
+	width:60%;
+	height:100%;
+	position:relative;
+	float:left;
+	font-family: 'Lato', sans-serif;
+	font-size:200%;
+	text-align:left;
+	padding-top:10%;
+}
+
+.simpletexte h2 {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-style:normal;
+	font-weight:100;
+}
+
+.designtexte {
+	width:100%;
+	height:70%;
+	position:relative;
+	float:left;
+	font-family: 'Lato', sans-serif;
+	font-size:200%;
+	text-align:left;
+	text-align:center;
+}
+
+.designtexte h2 {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-style:normal;
+	font-weight:100;
+}
+.designpic {
+	width:100%;
+	height:100%;
+	float:right;
+	position:relative;
+	background-color:#000;
+}
+
+.design {
+	width:100%;
+	height:70%;
+	position:relative;
+	background-color:#FFF;
+	margin:0 auto;
+	border-top:1px solid #CCC;
+}
+
+
+/*JAVAS*/
+
+// JavaScript Document
+//le transition
+window.onload = function() {
+	$('body').delay(5000).queue(function(){
+		  $('.loader-overlay').removeClass('hidden').clearQueue();
+		  $('.loader').addClass('quit-loader').clearQueue();
+		  $('.accueil').addClass('start-accueil').clearQueue();
+});
+	$('html').delay(5100).queue(function(){
+		  $('body').css('overflow' , 'visible').clearQueue();
+	});
+};
+		
+// le scroll
+$(document).ready(function() {
+		$('.scrollTo').click( function() {
+			var page = $(this).attr('href');
+			var speed = 800;
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed );
+			return false;
+		});
+	});
+	
+//le slide up
+jQuery(document).ready(function() {
+    jQuery('.post').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeIn',
+        offset: 100
+       });
+});
