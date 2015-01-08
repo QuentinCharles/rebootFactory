@@ -1,19 +1,18 @@
 
-body{
-	background: black;
-}
+/* Color, Font et hiérarchie*/
 
-.container{
-	background: url('../img/fond.jpg ') ;
-	width: 320px;
-	height: 480px;
-	padding: 0;
-	margin: 0 auto;
-	overflow: hidden;
-	position: relative;
-}
+/*
+	colorBar: #cb4252;
+	background: rgba(203,66,82,1);
 
-/* Font et hiérarchie*/
+    colorBouton: #f7fefe;
+    background: rgba(247,254,254,1);
+
+	colorFond: #e7e3eb ;
+	background: rgba(231,227,235,1);
+
+  */
+
 
 h1,h2,h3,h4,h5,h6{
   font-family: "lobster",serif;
@@ -26,6 +25,22 @@ p{
 /* // End Font et hiérarchie //*/
 
 
+body{
+	background: black;
+}
+
+.container{
+	background: #e7e3eb ;
+/*	background: url('../img/fond.jpg'); */
+	width: 320px;
+	height: 480px;
+	padding: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+/* Bar principale ( Haut ) */
 
 .bar{
 	background: #cb4252;
@@ -43,6 +58,11 @@ p{
 	width: 50px;
 	height: 50px;
 	float: left;
+	background: url('../img/set-icon.png') no-repeat;
+	-webkit-transform:scale(0.6);
+	position: relative;
+	left: 4px;
+	top: 6px;
 
 }
 
@@ -62,9 +82,12 @@ p{
 	color: white;
 	float: left;
 	margin-left: 23%;
-	font-weight: bold;
+	font-weight: 100;
 	-webkit-transition: all 0.5s ease;
+	position: relative;
+	top: -6px;
 }
+
 
 .titreUnHover{
 -webkit-transform:translate(-96px);
@@ -104,27 +127,342 @@ opacity: 0;
 }
 
 .capsule{
-	background: #aa283d;
+	cursor: pointer;
+	background: #9d3e3f;
 	width: 50px;
-	height: 25px;
+	height: 11px;
 	float: left;
 	margin-left: 23%;
 	border-radius: 25px;
-	margin-top: 12px;
+	margin-top: 22px;
 }
 
 .bouton{
+	cursor: pointer;
 	height: 25px;
 	width: 25px;
 	border-radius: 17px;
-	background: #fffbfd;
+	background: white;
 	box-shadow: 1px 1px 1px 0.4px black;
 	-webkit-transition: all 0.3s ease;
 	cursor: pointer;
+	position: relative;
+	top: -8px;
 }
 
 .boutonHover{
-	background: white;
+	background: #cb4252;
 	-webkit-transform:translate(25px);
 
 }
+
+
+.epingle{
+	background: url('../img/epingleEpingler.svg')  no-repeat 3px 3px;
+	width: 19px;
+	height: 19px;
+	display: block;
+	opacity: 1;
+}
+
+.epingleHover{
+-webkit-transform:rotate(45deg);
+opacity: 0;
+
+}
+
+.epingleEpingler{
+	background: url('../img/epingle.svg')  no-repeat 3px 0px;
+	width: 19px;
+	height: 19px;
+	display: block;
+	position: relative;
+	top: -19px;
+	opacity: 0;	
+	-webkit-transform:rotate(45deg);
+	
+}
+
+.epingleEpinglerHover{
+	opacity: 1;
+}
+
+
+/* END Bar principale ( Haut ) */
+
+
+
+
+/* Filtres direct (page HighOut) */
+
+.nav {
+ padding:0;
+ margin:70px 2.36%;
+ list-style-type:none;
+ }
+
+.navList {
+ float:left; /*pour IE*/
+ }
+
+.navList_lien {
+margin: 0;
+padding: 0;
+background: rgba(203,66,82,1); 
+ display:block;
+ float:left;   
+ width:98px;
+ line-height:26px; /*hauteur de l'image de fond*/
+ color:#DCDCDC;
+ text-decoration:none;
+ text-align:center;
+ font-size: 13px;margin-left: 1px;
+ }
+
+  .navList_lienUn{
+ 	border-radius: 4px 0px 0px 4px;
+ 	border: 1px solid rgba(203,66,82,1);
+ 	position: relative;
+	left: 4px;
+	background: rgba(203,66,82,0);
+	/*color:  rgba(203,66,82,1) ;*/
+		color: #e7e3eb;
+
+
+}
+
+  .navList_lienDeux, .navList_lienTrois{
+background: rgba(203,66,82,0);
+color:  rgba(203,66,82,1) ;
+border: 1px solid rgba(203,66,82,1);
+ }
+
+ .navList_lienHover{
+ 	background: rgba(203,66,82,1);
+	color: #e7e3eb;
+ }
+
+
+  .navList_lienDeux{
+ position: relative;
+left: 2px;
+
+ }
+
+ .navList_lienTrois{
+ 	border-radius: 0px 4px 4px 0px;
+ }
+
+
+ul li a:hover {
+ }  
+
+ /* END Filtres direct (page HighOut) */ 
+
+/* -- */
+
+/* Epingle Soirée (page HighOut) */
+.highoutEpingle{
+	background: rgba(247,254,254,1);;
+	width: 256px;
+	height: 245px;
+	margin: 0 auto;
+	position: relative;
+	top: 22px;
+	box-shadow: 0px 1px 8px 1px #414141;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.highoutEpingleDeux{
+	position: absolute;
+	top: 119px;
+	left: 302px;
+	opacity: 0.6;
+	-webkit-transform:scale(0.95);
+}
+
+.highoutEpingleTrois{
+	position: absolute;
+	top: 121px;
+	right: 303px;
+	opacity: 0.6;
+	-webkit-transform:scale(0.95);
+}
+
+.highoutEpingle_image{
+	margin: 0;
+	padding: 0;
+	background: url('../img/soireeUne.jpg') no-repeat;
+	width: 100%;
+	height: 105px;
+}
+
+.highoutEpingle_endroit{
+position: absolute;
+top: 50px;
+color: rgba(247,254,254,1);
+font-weight: bold;
+font-size: 20px;
+background: rgba(0,0,0,0.1);
+width: 100%;
+padding: 5px; 
+}
+
+.hightoutEpingle_details{
+	position: absolute;
+	left: 195px;
+	top: 80px;
+	width: 50px;
+	height: 50px;
+	background:  rgba(203,66,82,1);
+	border-radius: 25px;
+}
+
+.hightoutEpingle_details p{
+	color: rgba(247,254,254,1);
+	font-size: 46px;
+	position: relative;
+	left: 20px;
+	top: -52px;
+	font-weight: 500;
+}
+
+.highoutEpingle_nom{
+	margin: 0;
+	padding: 0;
+	color:rgba(203,66,82,1);
+	padding: 10px 10px;
+	border-bottom: 1px solid rgba(0,0,0,0.0);
+	box-shadow: 0px -6px 14px 1px rgba(0,0,0,0.6);
+	font-weight: 500;
+}
+
+.hightoutEpingle_infosP{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: red;
+}
+
+.hightoutEpingle_infosPList{
+float: left;
+}
+
+.highoutEpingle_icone{
+	width: 18px;
+	height: 18px;
+}
+
+.highoutEpingle_infosPList-lien{
+ margin: 0;
+ padding: 0;
+ display:block;
+ float:left;   
+ width:83px;
+ line-height:0px; /*hauteur de l'image de fond*/
+ text-decoration:none;
+ color:rgba(203,66,82,1);
+ text-align:center;
+ font-size: 19px;
+ margin-left: 1px;
+ border-left: 1px solid rgba(0,0,0,0.1);
+ border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.hightoutEpingle_infosS{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: red;
+}
+
+.hightoutEpingle_infosSList{
+float: left;
+}
+
+.highoutEpingle_icone{
+	width: 31px;
+	height: 31px;
+}
+
+.highoutEpingle_infosSList-lien{
+ margin: 0;
+ padding: 0;
+ display:block;
+ float:left;   
+ width:83px;
+ line-height:0px; /*hauteur de l'image de fond*/
+ text-decoration:none;
+ color:#666666;
+ text-align:center;
+ font-size: 12px;
+ margin-left: 1px;
+}
+
+.highoutNumerotation{
+	font-size: 10px;
+	color: #666666;
+	position: relative;
+	left: 148px;
+	top: 21px;
+}
+
+
+
+
+.highoutBoutons{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: red;
+}
+
+.highoutBoutonsList{
+float: left;
+position: relative;
+left: 32px;
+}
+
+
+.highoutBoutonsList-lien{
+ margin: 0;
+ padding: 0;
+ display:inline-block;
+ width:125px;
+ line-height:35px; /*hauteur de l'image de fond*/
+ text-decoration:none;
+ color:#666666;
+ text-align:center;
+ font-size: 20px;
+ clear: both;
+ position: relative;
+ top: 24px;
+ background: red;
+ height: 35px;
+  font-family: "lobster",serif;
+  color: rgba(247,254,254,1);
+}
+
+.highoutBoutonsList-lienUn{
+	background: rgba(220,218,229,1);
+}
+
+.highoutBoutonsList-lienDeux{
+	margin-left: 5%;
+	background: rgba(203,66,82,1);
+}
+
+
+
+
+
+
+
+
+/* END Epingle Soirée (page HighOut) */
+
+
+
+
+
